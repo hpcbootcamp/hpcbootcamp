@@ -12,7 +12,7 @@ program, step through execution, and observe the state of your program. You can
 also do post-mortem analysis on core dump files, which are left by the
 operating system when your program suffers a catastrophic crash.
 
-We will use this program for learning gdb:
+We will use this :download:`program <code/quicksort.c>` for learning gdb:
 
 .. literalinclude:: code/quicksort.c
     :language: c
@@ -75,6 +75,49 @@ crashes.
 Using Gprof
 ^^^^^^^^^^^
 
+Compile the program with -pg:
+
+.. code-block:: console
+
+  $ gcc -pg -O3 -o pgm pgm.c
+
+When you run the program, a gmon.out file will be created. Then, we run gprof
+to obtain text output:
+
+.. code-block:: console
+
+  $ gprof pgm gmon.out
+
+We will use this program to trying gprof:
+
+.. literalinclude:: code/primes/find-primes1.c
+    :language: c
+
+You can download all the variations using these links:
+:download:`primes.zip <code/primes.zip>`
 
 Makefiles
 ^^^^^^^^^
+
+``make`` makes it easy to compile large code bases. A Makefile lets us specify
+what needs to be compiled and what are the dependencies.
+
+An example of a simple Makefile is below:
+
+.. literalinclude:: code/Makefile
+    :language: make
+
+In the :download:`make directory <code/make.zip>` for today’s lab, there are
+eight  files comprising a hypothetical program. Don’t try to figure out what
+the program does, as it doesn’t do anything interesting. Instead, write a
+Makefile for the whole program that separately compiles each .c file and
+generates a single executable file. Then add a target clean to the Makefile
+that removes executable and object files, and then add another target main.tgz
+that creates a tarfile with that name containing all header and source files.
+The command:
+
+.. code-block:: console
+
+  tar -czvf <tarfilename> <listoffiles>
+
+will create a compressed tar file containing those files.
