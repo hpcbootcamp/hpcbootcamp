@@ -118,6 +118,6 @@ The command:
 
 .. code-block:: console
 
-  tar -czvf <tarfilename> <listoffiles>
+  $ tar -czvf <tarfilename> <listoffiles>
 
 will create a compressed tar file containing those files.
