@@ -114,5 +114,6 @@ The command line of the program looks like:
 
 .. code-block:: console
 
-  $ ./life life.data.1 250 250
+  $ ./life life.data.1 100 250 250
 
+The solution file is :download:`here <code/day2/life-par.c>`.
