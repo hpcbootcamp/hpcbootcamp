@@ -50,7 +50,10 @@ example:
 GDB and OpenMP
 ^^^^^^^^^^^^^^
 
-GDB has extensions for debugging multithreaded programs, and we will briefly cover them here.
+GDB has extensions for debugging multithreaded programs, and we will briefly
+cover them here.
+
+We will use this file for the :download:`gdb <code/day2/gdb-omp.c>` exercise.
 
 Thread-specific Commands
 """"""""""""""""""""""""
