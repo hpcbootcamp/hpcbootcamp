@@ -12,9 +12,9 @@ program, step through execution, and observe the state of your program. You can
 also do post-mortem analysis on core dump files, which are left by the
 operating system when your program suffers a catastrophic crash.
 
-We will use this :download:`program <code/quicksort.c>` for learning gdb:
+We will use this :download:`program <code/day1/quicksort.c>` for learning gdb:
 
-.. literalinclude:: code/quicksort.c
+.. literalinclude:: code/day1/quicksort.c
     :language: c
 
 To invoke gdb, type:
@@ -90,11 +90,11 @@ to obtain text output:
 
 We will use this program to trying gprof:
 
-.. literalinclude:: code/primes/find-primes1.c
+.. literalinclude:: code/day1/find-primes1.c
     :language: c
 
 You can download all the variations using these links:
-:download:`primes.zip <code/primes.zip>`
+:download:`primes.zip <code/day1/primes.zip>`
 
 Makefiles
 ^^^^^^^^^
@@ -104,10 +104,10 @@ what needs to be compiled and what are the dependencies.
 
 An example of a simple Makefile is below:
 
-.. literalinclude:: code/Makefile
+.. literalinclude:: code/day1/Makefile
     :language: make
 
-In the :download:`make directory <code/make.zip>` for today’s lab, there are
+In the :download:`make directory <code/day1/make.zip>` for today’s lab, there are
 eight  files comprising a hypothetical program. Don’t try to figure out what
 the program does, as it doesn’t do anything interesting. Instead, write a
 Makefile for the whole program that separately compiles each .c file and
