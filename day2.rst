@@ -108,7 +108,7 @@ To compile the program, you type:
 
 Input
 """""
-Your program should read in a file containing the coordinates of the initial cells. Sample files are located here: `life.data.1 <http://www.cs.umd.edu/class/fall2019/cmsc714/assignments/mpi/data/life.data.1>`_ and `life.data.2 <http://www.cs.umd.edu/class/fall2019/cmsc714/assignments/mpi/data/life.data.2>`_.
+Your program should read in a file containing the coordinates of the initial cells. Sample files are located here: `life.data.1 <http://www.cs.umd.edu/class/fall2019/cmsc714/assignments/mpi/data/life.data.1>`_, `life.data.2 <http://www.cs.umd.edu/class/fall2019/cmsc714/assignments/mpi/data/life.data.2>`_, and `life.data.1000x1000 <http://www.cs.umd.edu/class/fall2019/cmsc714/assignments/mpi/data/life.data.1000x1000>`_.
 
 The command line of the program looks like:
 
