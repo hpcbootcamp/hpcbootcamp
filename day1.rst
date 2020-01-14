@@ -24,7 +24,10 @@ To invoke gdb, type:
   $ gcc -g -o quicksort quicksort.c
   $ gdb quicksort
 
-You should investigate the following commands in gdb, and understand how and when they should be applied. Commands generally lie in two categories: controlling execution and inspecting the state of the program. First though, is the list command:
+You should investigate the following commands in gdb, and understand how and
+when they should be applied. Commands generally lie in two categories:
+controlling execution and inspecting the state of the program. First though, is
+the list command:
 
 * `list <https://sourceware.org/gdb/current/onlinedocs/gdb/List.html#index-list-439>`_: List source code. You can list a particular function by using "list function-name". This is useful when using the GDB interface from the command line.
 
@@ -71,6 +74,12 @@ crashes.
 * `print <http://sourceware.org/gdb/current/onlinedocs/gdb/Data.html#index-print-492>`_: Print the current state of a given variable or expression. The print command is smart enough to print arrays and structs properly. You can even make function calls as part of the expression.
 
 * `display <http://sourceware.org/gdb/current/onlinedocs/gdb/Auto-Display.html#index-display-533>`_: Like print, but this produces output every time the program stops. This prints nothing if the expression is not valid.
+
+To see the contents of the array, you will have to cast the pointer as an array so that GDB can display it correctly:
+
+.. code-block:: console
+ 
+  display (int[SIZE])*array
 
 Using Gprof
 ^^^^^^^^^^^
