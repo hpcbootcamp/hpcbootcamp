@@ -39,7 +39,7 @@ this boilerplate code:
 .. code-block:: c
 
   #include <mpi.h>
-  int main(int argv, char ** argc) {
+  int main(int argc, char ** argv) {
     int processes, rank;
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &processes);
@@ -50,4 +50,11 @@ this boilerplate code:
     MPI_Finalize();
     return 0;
   }
+
+
+Using mpiP
+^^^^^^^^^^
+
+Using HPCToolkit
+^^^^^^^^^^^^^^^^
 
