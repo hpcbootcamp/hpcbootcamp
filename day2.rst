@@ -30,7 +30,7 @@ Timing OpenMP programs
 We can use ``omp_get_wtime()`` to time OpenMP programs. Below is a simple
 example:
 
-.. code-block:: cpp
+.. code-block:: c
 
   #include <omp.h>
 
@@ -40,11 +40,11 @@ example:
   tmp = omp_get_wtime();
   #pragma omp parallel for
   for (int i=0; i<n; i++) {
-    /* do work */
+    // do work
   }
   elapsed = omp_get_wtime() - tmp;
 
-  printf(“time spent in loop: %f\n”, elapsed);
+  printf("time spent in loop: %f\n", elapsed);
 
 
 GDB and OpenMP
