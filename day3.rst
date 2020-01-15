@@ -66,7 +66,7 @@ To link mpiP to your program you need to add these libraries on your link line:
 
 .. code-block:: console
 
-  -L$(MPIP_LIBDIR) -lmpiP -lm -lbfd -L$(LIBUNWIND_LIBDIR) -lunwind
+  -L$(MPIP_LIBDIR) -lmpiP -lm -lbfd -L$(LIBUNWIND_LIBDIR) -Wl,-rpath,$(LIBUNWIND_LIBDIR) -lunwind
 
 Using HPCToolkit
 ^^^^^^^^^^^^^^^^
