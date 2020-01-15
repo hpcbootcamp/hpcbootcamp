@@ -55,6 +55,19 @@ this boilerplate code:
 Using mpiP
 ^^^^^^^^^^
 
+You can load the mpip module by typing:
+
+.. code-block:: console
+
+  $ module load libunwind
+  $ module load mpip
+
+To link mpiP to your program you need to add these libraries on your link line:
+
+.. code-block:: console
+
+  -L$(MPIP_LIBDIR) -lmpiP -lm -lbfd -L$(LIBUNWIND_LIBDIR) -lunwind
+
 Using HPCToolkit
 ^^^^^^^^^^^^^^^^
 
